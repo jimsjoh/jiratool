@@ -11,7 +11,7 @@ SetBatchLines, -1
 #Persistent
 Menu Tray, Icon, %A_ScriptDir%\Data\JHT.ico
 BlockInput, Off
-Title := "JIRA tool 20180727"
+Title := "JIRA tool"
 
 ;Windows Key + V to trigger
 ;#v::
