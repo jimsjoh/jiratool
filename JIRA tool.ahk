@@ -129,7 +129,7 @@ CreateURL:
 
 
 	;Labels
-	FeatureLabels := RegExReplace(FeatureLabels, "(?!\.)(?!\/)[\W]+"," ")
+	FeatureLabels := RegExReplace(FeatureLabels, "(?!\.)(?!\/)(?!\-)[\W]+"," ")
 	Loop, Parse, FeatureLabels,%A_Space%
 	{
 	FileAppend, &labels=%A_LoopField%, %A_ScriptDir%\Data\labelsvar.txt
