@@ -22,7 +22,7 @@ Gui, 1: Color, White
 Gui, 1: Margin, 5, 5
 ;Project
 Gui, 1: Add, Text, w200 h20 +0x200, Project
-Gui, 1: Add, DropDownList, yp+20 vProject w200 +Sort, eCAT/XPT - Content|PP - BL-Credit|PP - BL-Global Operations|PP - BL-Risk|PP - PL-Consumer|PP - PL-Merchant|PP - PL-Payments
+Gui, 1: Add, DropDownList, yp+20 vProject w200 +Sort, eCAT/XPT - Content|Localization (LOCALZN)|PP - BL-Credit|PP - BL-Global Operations|PP - BL-Risk|PP - PL-Consumer|PP - PL-Merchant|PP - PL-Payments
 ;Bug/improv
 Gui, 1: Add, Text, yp+30 w200 h20 +0x200, Issue type
 Gui, 1: Add, DropDownList, yp+20 vIssueType w200 +Sort, Improvement|Bug
@@ -145,6 +145,7 @@ CreateURL:
 
 	;Generate complete URL
 	NavURL = %MinURL%%ProjectURL%%IssuetypeURL%%PriorityURL%%EnvVar%%UserURL%%ReporterURL%%DescriptionURL%%IssuecatURL%%LabelsURL%
+	;MsgBox,%NavURL%
 	Run, %NavURL%
 	;Return
   Exitapp
